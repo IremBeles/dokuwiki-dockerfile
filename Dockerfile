@@ -10,5 +10,5 @@ RUN cp dokuwiki-dockerfile/discussion/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/gchart/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/loglog/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/move/ opt/bitnami/dokuwiki/lib/plugins -r
-# RUN cp dokuwiki-dockerfile/tag/ opt/bitnami/dokuwiki/lib/plugins -r
+RUN cp dokuwiki-dockerfile/tag/ opt/bitnami/dokuwiki/lib/plugins -r
 # RUN cp dokuwiki-dockerfile/tokenbucketauth/ opt/bitnami/dokuwiki/lib/plugins -r
