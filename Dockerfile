@@ -7,7 +7,7 @@ RUN cp dokuwiki-dockerfile/addnewpage opt/bitnami/dokuwiki/lib/plugins/ -r
 RUN cp dokuwiki-dockerfile/cloud/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/discussion/ opt/bitnami/dokuwiki/lib/plugins -r
 # RUN cp dokuwiki-dockerfile/dw2pdf/ opt/bitnami/dokuwiki/lib/plugins -r iniyor 45mb
-# RUN cp dokuwiki-dockerfile/gchart/ opt/bitnami/dokuwiki/lib/plugins -r
+RUN cp dokuwiki-dockerfile/gchart/ opt/bitnami/dokuwiki/lib/plugins -r
 # RUN cp dokuwiki-dockerfile/loglog/ opt/bitnami/dokuwiki/lib/plugins -r
 # RUN cp dokuwiki-dockerfile/move/ opt/bitnami/dokuwiki/lib/plugins -r
 # RUN cp dokuwiki-dockerfile/tag/ opt/bitnami/dokuwiki/lib/plugins -r
