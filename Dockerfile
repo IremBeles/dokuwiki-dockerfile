@@ -1,4 +1,4 @@
-FROM bitnami/dokuwiki:latest
+FROM bitnami/dokuwiki:0.20180422.201805030840-debian-9-r124
 RUN apt-get update
 RUN apt-get install -y git
 RUN sed -i "s/interwiki'] = ''/interwiki'] = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
