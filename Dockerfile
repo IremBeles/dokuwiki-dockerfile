@@ -5,11 +5,11 @@ RUN sed -i "s/interwiki'] = ''/interwiki'] = 'extern_tab'/g" opt/bitnami/dokuwik
 RUN sed -i "s/windows']   = ''/windows']   = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
 RUN sed -i "s/media']     = ''/media']     = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
 RUN git clone https://github.com/IremBeles/dokuwiki-dockerfile.git
-# RUN cp dokuwiki-dockerfile/captcha opt/bitnami/dokuwiki/lib/plugins/ -r indirildi 
+RUN cp dokuwiki-dockerfile/captcha opt/bitnami/dokuwiki/lib/plugins/ -r 
 RUN cp dokuwiki-dockerfile/addnewpage opt/bitnami/dokuwiki/lib/plugins/ -r
 RUN cp dokuwiki-dockerfile/cloud/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/discussion/ opt/bitnami/dokuwiki/lib/plugins -r
-# RUN cp dokuwiki-dockerfile/dw2pdf/ opt/bitnami/dokuwiki/lib/plugins -r iniyor 45mb
+RUN cp dokuwiki-dockerfile/dw2pdf/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/gchart/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/loglog/ opt/bitnami/dokuwiki/lib/plugins -r
 RUN cp dokuwiki-dockerfile/move/ opt/bitnami/dokuwiki/lib/plugins -r
