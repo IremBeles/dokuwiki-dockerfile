@@ -1,0 +1,8 @@
+base     medialist
+author   Michael Klier <chi@chimeric.de>  2005-2009
+author   Satoshi Sahara
+email    sahara.satoshi@gmail.com
+date     2016-08-24
+name     MediaList Plugin
+desc     show a list of media files referred in a given page or stored in a given namespace.
+url      https://www.dokuwiki.org/plugin:medialist

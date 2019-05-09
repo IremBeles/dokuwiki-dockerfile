@@ -1,0 +1,52 @@
+/**
+ * LESS for MediaList plugin for DokuWiki
+ */
+
+.dokuwiki {
+  div.medialist {
+    div.mediamanager {
+      float: right;
+      font-size: 80%;
+    }
+  }
+
+  div.info {
+    margin-left: 3em;
+    max-width: 60%;
+  }
+
+  ul.medialist {
+    list-style: none;
+    margin-left: 0;
+    li {
+      margin-left: 1.2em;
+      text-indent: -1.2em;
+    }
+    input[type=checkbox] {
+      font-size: 100%;
+      opacity: 0.00;
+      width: 1.2em;
+    }
+    input[type=checkbox]+label {
+      &::before {
+        content: "\2610"; // ☐ ballot box
+        display: inline-block;
+        opacity: 0.40;
+        vertical-align: top;
+      }
+    }
+    input[type=checkbox]:checked+label {
+      &::before {
+        content: "\2611"; // ☑ ballot box with check
+      }
+    }
+    a.linked {
+      font-weight: bold;
+    }
+    span.mediainfo {
+      font-size: 90%;
+    }
+  }
+
+}
+
