@@ -4,6 +4,7 @@ RUN apt-get install -y git
 RUN sed -i "s/interwiki'] = ''/interwiki'] = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
 RUN sed -i "s/windows']   = ''/windows']   = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
 RUN sed -i "s/media']     = ''/media']     = 'extern_tab'/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
+RUN sed -i "s/sneaky_index']= 0/sneaky_index']= 1/g" opt/bitnami/dokuwiki/conf/dokuwiki.php
 RUN git clone https://github.com/IremBeles/dokuwiki-dockerfile.git
 RUN cp dokuwiki-dockerfile/captcha opt/bitnami/dokuwiki/lib/plugins/ -r
 RUN cp dokuwiki-dockerfile/backup opt/bitnami/dokuwiki/lib/plugins/ -r
